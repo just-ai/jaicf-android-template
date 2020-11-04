@@ -1,4 +1,6 @@
-# JAICF template
+<img src="https://github.com/just-ai/jaicf-android-template/raw/master/demo.gif" align="right">
+
+# JAICF Android template
 
 This template project shows how to use [JAICF](https://github.com/just-ai/jaicf-kotlin) to create voice enabled mobile assistant.
 
