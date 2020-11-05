@@ -5,5 +5,5 @@ import com.justai.jaicf.activator.caila.CailaIntentActivator
 import com.justai.jaicf.activator.caila.CailaNLUSettings
 
 fun createActivator(context: Context) = CailaIntentActivator.Factory(
-    CailaNLUSettings("cec8dc67-01f1-4c52-b00d-3fc8ea154e45")
+    CailaNLUSettings("52f8c478-b863-409f-8ad5-98b666413601")
 )
