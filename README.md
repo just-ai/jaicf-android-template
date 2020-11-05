@@ -2,7 +2,7 @@
 
 # JAICF Android template
 
-This template project shows how to use [JAICF](https://github.com/just-ai/jaicf-kotlin) to create voice enabled mobile assistant.
+This template project shows how to use [JAICF](https://github.com/just-ai/jaicf-kotlin) to create voice enabled mobile assistant using [Aimybox SDK](https://github.com/just-ai/aimybox-android-assistant).
 
 ## How to use
 
