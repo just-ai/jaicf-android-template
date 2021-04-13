@@ -3,18 +3,20 @@ package com.justai.aimybox.jaicf
 import com.justai.jaicf.activator.caila.caila
 import com.justai.jaicf.activator.dialogflow.dialogflow
 import com.justai.jaicf.activator.rasa.rasa
+import com.justai.jaicf.builder.Scenario
 import com.justai.jaicf.channel.aimybox.aimybox
 import com.justai.jaicf.hook.AfterProcessHook
 import com.justai.jaicf.model.scenario.Scenario
+import com.justai.jaicf.model.scenario.getValue
 
-object MainScenario: Scenario() {
+object MainScenario: Scenario {
 
-    init {
+    override val model by Scenario {
         /**
          * Appends these buttons for every response
          */
         handle<AfterProcessHook> {
-            it.reactions.buttons(
+            reactions.buttons(
                 "Help me!", "How are you?", "What is your name?"
             )
         }
