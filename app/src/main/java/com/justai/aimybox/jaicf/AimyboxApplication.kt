@@ -9,8 +9,6 @@ import com.justai.aimybox.dialogapi.jaicf.JAICFDialogApi
 import com.justai.aimybox.speechkit.google.platform.GooglePlatformSpeechToText
 import com.justai.aimybox.speechkit.google.platform.GooglePlatformTextToSpeech
 import com.justai.jaicf.BotEngine
-import com.justai.jaicf.activator.caila.CailaIntentActivator
-import com.justai.jaicf.activator.caila.CailaNLUSettings
 import java.util.*
 
 class AimyboxApplication: Application(), AimyboxProvider {
@@ -24,7 +22,7 @@ class AimyboxApplication: Application(), AimyboxProvider {
         val speechToText = GooglePlatformSpeechToText(context, Locale.ENGLISH)
 
         val engine = BotEngine(
-            MainScenario.model,
+            scenario = MainScenario,
             activators = arrayOf(createActivator(context))
         )
 
